@@ -27,3 +27,9 @@ It leverages the following components from the Jetpack library:
 ![BlankFragment](https://user-images.githubusercontent.com/59525449/86919702-f0bd1e80-c128-11ea-890f-5db06db2ebd2.png)
 ![NewsFragment](https://user-images.githubusercontent.com/59525449/86919731-fadf1d00-c128-11ea-9116-8d54aa5ec472.png)
 ![NavDrawer](https://user-images.githubusercontent.com/59525449/86919740-ffa3d100-c128-11ea-8653-95a4dd50bda9.png)
+
+## TO DO
+* Add settings fragment details
+* Add darkmode settings.
+* Add search interface with fiter query.
+
