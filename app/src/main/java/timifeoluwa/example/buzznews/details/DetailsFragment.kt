@@ -10,9 +10,7 @@ import androidx.lifecycle.ViewModelProviders
 import timifeoluwa.example.buzznews.databinding.FragmentDetailBinding
 
 class DetailsFragment : Fragment() {
-    private val viewModel: DetailsViewModel by lazy {
-        ViewModelProviders.of(this).get(DetailsViewModel::class.java)
-    }
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -27,6 +25,7 @@ class DetailsFragment : Fragment() {
             ViewModelProviders.of(this, viewModelFactory).get(DetailsViewModel::class.java)
         (activity as AppCompatActivity).supportActionBar?.title = "Details"
         return binding.root
+
     }
 }
 

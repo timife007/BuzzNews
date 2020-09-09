@@ -9,6 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.fragment.findNavController
+import kotlinx.android.synthetic.main.fragment_news.*
 import timifeoluwa.example.buzznews.databinding.FragmentNewsBinding
 
 class NewsFragment : Fragment() {
@@ -21,6 +22,7 @@ class NewsFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        (activity as? AppCompatActivity)?.supportActionBar?.title = "Popular News"
         val binding = FragmentNewsBinding.inflate(inflater)
         binding.lifecycleOwner = this
         binding.viewModel = viewModel
@@ -35,7 +37,6 @@ class NewsFragment : Fragment() {
                 viewModel.displayArticleDetailsComplete()
             }
         })
-        (activity as AppCompatActivity).supportActionBar?.title = "Popular News"
         setHasOptionsMenu(true)
         return binding.root
 
