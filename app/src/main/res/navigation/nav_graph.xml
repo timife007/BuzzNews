@@ -8,7 +8,6 @@
     <fragment
         android:id="@+id/newsFragment"
         android:name="timifeoluwa.example.buzznews.news.NewsFragment"
-        android:label="NewsFragment"
         tools:layout="@layout/fragment_news">
         <action
             android:id="@+id/action_newsFragment_to_detailsFragment"
@@ -17,7 +16,6 @@
     <fragment
         android:id="@+id/detailsFragment"
         android:name="timifeoluwa.example.buzznews.details.DetailsFragment"
-        android:label="DetailsFragment"
         tools:layout="@layout/fragment_detail">
         <argument
             android:name="selectedArticle"
@@ -25,6 +23,5 @@
     </fragment>
     <fragment
         android:id="@+id/settingsFragment"
-        android:name="timifeoluwa.example.buzznews.settings.SettingsFragment"
-        android:label="SettingsFragment" />
+        android:name="timifeoluwa.example.buzznews.settings.SettingsFragment" />
 </navigation>
