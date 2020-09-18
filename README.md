@@ -5,9 +5,10 @@ BuzzNews is a simple business news app using ViewModel & LiveData with Retrofit,
 
 This app demonstrates the following views and techniques:
 
-* Retrofit to make api calls to an HTTP web service
-* Moshi which handles the deserialization of the returned JSON to Kotlin data objects
+* Retrofit to make api calls to an HTTP web service.
+* Moshi which handles the deserialization of the returned JSON to Kotlin data objects.
 * Glide to load and cache images by URL.
+* Using Http request interceptor.
 
 It leverages the following components from the Jetpack library:
 
