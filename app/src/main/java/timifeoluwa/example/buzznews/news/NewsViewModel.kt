@@ -8,7 +8,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.launch
 import timifeoluwa.example.buzznews.network.Article
-import timifeoluwa.example.buzznews.network.NewsApi
+import timifeoluwa.example.buzznews.network.NewsApiService
 
 enum class NewsStatus { LOADING, ERROR, DONE }
 
@@ -35,7 +35,8 @@ class NewsViewModel : ViewModel() {
 
     private fun getLatestNews() {
         coroutineScope.launch {
-            val getNewsDeferred = NewsApi.retrofitService.getNewsAsync()
+            val newsApiService = NewsApiService()
+            val getNewsDeferred = newsApiService.getNewsAsync()
             try {
                 _status.value = NewsStatus.LOADING
                 val newsResult = getNewsDeferred.await()

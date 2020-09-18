@@ -30,7 +30,7 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginRight="16dp"
                     android:fontFamily="sans-serif-black"
-                    android:text="Top Headlines"
+                    android:text="@string/topheadlines"
                     android:textColor="@color/colorSecondaryDark"
                     android:textSize="17sp"
                     android:textStyle="bold" />
@@ -43,8 +43,6 @@
                     app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                     app:listData="@{viewModel.news}"
                     tools:listitem="@layout/list_view_item" />
-
-
             </LinearLayout>
         </androidx.core.widget.NestedScrollView>
 

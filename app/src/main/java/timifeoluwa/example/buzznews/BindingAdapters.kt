@@ -51,6 +51,7 @@ fun bindStatus(statusImageView: ImageView, status: NewsStatus?) {
     }
 }
 
+
 @BindingAdapter("newsTitle")
 fun bindTitle(txt: TextView, title: String?) {
     txt.text = title

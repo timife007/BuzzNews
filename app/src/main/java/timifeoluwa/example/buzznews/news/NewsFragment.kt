@@ -1,15 +1,17 @@
 package timifeoluwa.example.buzznews.news
 
+import android.content.Context
+import android.graphics.Color
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.fragment.findNavController
-import kotlinx.android.synthetic.main.fragment_news.*
 import timifeoluwa.example.buzznews.databinding.FragmentNewsBinding
 
 class NewsFragment : Fragment() {
@@ -30,6 +32,7 @@ class NewsFragment : Fragment() {
             RecyclerViewAdapter(RecyclerViewAdapter.OnClickListener {
                 viewModel.displayArticleDetails(it)
             })
+
         viewModel.navigateToSelectedArticle.observe(viewLifecycleOwner, Observer {
             if (null != it) {
                 this.findNavController()
